@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.results-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.results-table th,
+.results-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.results-table th {
+  background-color: #f4f4f4;
+}
+
+.actor-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}

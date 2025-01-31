@@ -1,11 +1,12 @@
 class Provider {
-    constructor({ id, name, username, profileLink, picture, summary }) {
+    constructor({ id, name, username, profileLink, picture, summary, sampleMusic }) {
       this.id = id;
       this.name = name;
       this.username = username;
       this.profileLink = profileLink;
       this.picture = picture;
       this.summary = summary;
+      this.sampleMusic = sampleMusic;
     }
   
     static fromApiResponse(apiProvider) {
@@ -16,6 +17,7 @@ class Provider {
         profileLink: `https://voice123.com/${apiProvider.user.username}`,
         picture: apiProvider.user.picture_medium,
         summary: apiProvider.summary,
+        sampleMusic: apiProvider.relevant_sample.file
       });
     }
   }
